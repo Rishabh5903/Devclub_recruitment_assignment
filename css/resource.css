@@ -1,0 +1,380 @@
+body{
+    margin: 0;
+    padding: 0;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 16px;
+
+    background-color: #0b0927;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+  #frontpage{
+    padding-top: 80px;
+  }
+  /** HEADER **/
+  
+  #header-nav {
+    /* background-color: #060425; */
+    border-radius: 0;
+    border: 0;
+  
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    font-family: 'Chakra Petch', sans-serif;
+  }
+  
+  #logo-img {
+    background: url('../images/medium\ logo.png') no-repeat;
+    width: 150px;
+    height: 150px;
+    margin: 10px 15px 10px 0;
+  }
+  
+  .navbar-brand {
+    padding-top: 25px;
+  
+  }
+  
+  .navbar-brand h1 { 
+  
+    color: rgb(163, 3, 48);
+    font-size: 2em;
+    
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #222;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: .75;
+  }
+  .navbar-brand a:hover, .navbar-brand a:focus {
+    text-decoration: none;
+  }
+  
+  #notif a{
+    padding-top: 35px;
+    color: rgb(163, 3, 48);
+    text-align: center;
+    font-size: 1.5em;
+  }
+  #nav-list a {
+    color: rgb(163, 3, 48);
+    text-align: center;
+    font-size: 1.5em;
+    background-image: linear-gradient(
+      to right,
+   
+      #a34f86,
+      #4f94a3 50%,
+      rgb(163, 3, 48) 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+  
+    position: relative;
+    -webkit-background-clip: text;
+    
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  #nav-list a:before {
+    content: '';
+    background: #a34f86;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  #nav-list a:hover {
+   background-position: 0;
+  }
+  
+  #nav-list a:hover::before {
+    width:100%;
+  }
+  #notif a:hover {
+   background-position: 0;
+  }
+  
+  #notif a:hover::before {
+    width:100%;
+  }
+  
+  
+  .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+    border: 1px solid rgb(163, 3, 48);
+  }
+  .navbar-header button.navbar-toggle {
+    clear: both;
+    margin-top: -30px;
+  }
+  /* END HEADER */
+  
+  @media (min-width: 1200px) {
+  
+  }
+  
+  /********** Medium devices only **********/
+  @media (min-width: 992px) and (max-width: 1199px) {
+    /* Header */
+    #logo-img {
+      background: url('../images/small.png') no-repeat;
+      width: 100px;
+      height: 100px;
+      margin: 5px 5px 5px 0;
+    }
+  
+  }
+  
+  /********** Small devices only **********/
+  @media (min-width: 768px) and (max-width: 991px) {
+  
+  }
+  
+  /********** Extra small devices only **********/
+  @media (max-width: 767px) {
+    /* Header */
+    .navbar-brand {
+      padding-top: 10px;
+      height: 80px;
+    }
+    .navbar-brand h1 { /* Restaurant name */
+      padding-top: 10px;
+      font-size: 5vw; /* 1vw = 1% of viewport width */
+    }
+    .navbar-brand p { /* Kosher cert */
+      font-size: .6em;
+      margin-top: 12px;
+    }
+    .navbar-brand p img { /* Star-K */
+      height: 20px;
+    }
+  
+    #collapsable-nav a { /* Collapsed nav menu text */
+      font-size: 1.2em;
+    }
+    #collapsable-nav a span { /* Collapsed nav menu glyph */
+      font-size: 1em;
+      margin-right: 5px;
+    }
+  
+    #call-btn > a {
+      font-size: 1.5em;
+      display: block;
+      margin: 0 20px;
+      padding: 10px;
+      border: 2px solid #fff;
+      background-color: #f6b319;
+      color: #ffffff;
+    }
+    #xs-deliver {
+      margin-top: 5px;
+      font-size: .7em;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+    /* End Header */
+  
+  }
+  /*
+      DEMO STYLE
+  */
+  
+  
+  
+  p {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.1em;
+      font-weight: 300;
+      line-height: 1.7em;
+      color: #999;
+  }
+  
+  a,
+  a:hover,
+  a:focus {
+      color: inherit;
+      text-decoration: none;
+      transition: all 0.3s;
+  }
+  
+  .navbar {
+      padding: 15px 10px;
+      background: #fff;
+      border: none;
+      border-radius: 0;
+      margin-bottom: 40px;
+      box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-btn {
+      box-shadow: none;
+      outline: none !important;
+      border: none;
+  }
+  
+  .line {
+      width: 100%;
+      height: 1px;
+      border-bottom: 1px dashed #ddd;
+      margin: 40px 0;
+  }
+  #resources-nav{
+    background-color: #060425;
+    border-radius: 0;
+    border: 0;
+  
+    /* position: fixed; */
+    width: 100%;
+    height: 150px;
+    font-family: 'Chakra Petch', sans-serif;
+  }
+  .resources { position:relative;
+
+  }
+  
+  .overlay .box{
+    position: relative;
+    width: 300px;
+    height: 450px;
+    padding: 40px;
+    padding-top: 70px;
+    /* background: #fff; */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    margin: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+  
+  }
+ 
+  .resources recourcesvideo {
+      position:relative;
+      z-index:0;
+  
+      /* margin-top: 150px; */
+      /* padding-top: 150px; */
+  }
+  .overlay {
+      position:absolute;
+      top:0;
+      left:0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      right: 0;
+      z-index:1;
+      text-align: center;
+  
+      /* padding-top: 150px; */
+  }
+  .overlay .box .icon{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    color: #fff;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 50%;
+    font-size: 40px;
+    font-weight: 700;
+    transition: 1s;
+  }
+  /* .overlay .box:nth-child(1){
+    background: url(../images/html2.png);
+  }
+  .overlay .box:nth-child(3){
+    background: url(../images/css2.png);
+  }
+  .overlay .box:nth-child(4){
+    background: url(../images/js1.png) no-repeat;
+  } */
+  .overlay .box:nth-child(1) .icon{
+    box-shadow: 0 0 0 0 #7171bb;
+    background: #7171bb;
+  }
+  .overlay .box:nth-child(1):hover .icon{
+    box-shadow: 0 0 0 400px #7171bb;
+  }
+  /* .overlay .box:nth-child(2){
+    background: url(../images/react3.png);
+  } */
+  .overlay .box:nth-child(2) .icon{
+    box-shadow: 0 0 0 0 #1dab22;
+    background: #1dab22;
+  }
+  .overlay .box:nth-child(2):hover .icon{
+    box-shadow: 0 0 0 400px  #1dab22;
+  }
+  .overlay .box:nth-child(3) .icon{
+    box-shadow: 0 0 0 0 #2196f3;
+    background: #2196f3;
+  }
+  .overlay .box:nth-child(3):hover .icon{
+    box-shadow: 0 0 0 400px #2196f3;
+  }
+  .overlay .box:nth-child(4) .icon{
+    box-shadow: 0 0 0 0 #ff5b19;
+    background: #ff5b19;
+  }
+  .overlay .box:nth-child(4):hover .icon{
+    box-shadow: 0 0 0 400px #ff5b19;
+  }
+.overlay .box .content{
+    position: relative;
+    z-index: 1;
+    transition: 0.5s;
+
+}
+.overlay .box:hover .content{
+    color: #fff;
+}
+.overlay .box .content h2{
+    font-size: 20px;
+    margin: 10px 0;
+    padding: 0;
+    font-weight: bold;
+    color: rgb(163, 3, 48);
+    /* text-decoration-thickness: 500; */
+}
+.overlay .box .content p{
+    margin: 0;
+    padding: 0;
+
+}
+.overlay .box:before{
+    content: '';
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.2);
+    z-index: 2;
+}
+.content a{
+    display: inline-block;
+    padding: 10px 20px;
+    background: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    margin-top: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.content p{
+    color: #fff;
+}

@@ -1,0 +1,579 @@
+body {
+
+  font-size: 16px;
+  color: #fff;
+  background-color: #0b0927;
+  font-family: 'Chakra Petch', sans-serif;
+  /* position:absolute; */
+}
+
+/** HEADER **/
+
+#header-nav {
+  background-color: #060425;
+  border-radius: 0;
+  border: 0;
+
+  position: fixed;
+  width: 100%;
+  height: 150px;
+  font-family: 'Chakra Petch', sans-serif;
+}
+#index-header-nav {
+  background-color: #060425;
+  border-radius: 0;
+  border: 0;
+
+  /* position: fixed; */
+  width: 100%;
+  height: 80px;
+  font-family: 'Chakra Petch', sans-serif;
+}
+
+#logo-img {
+  background: url('../images/medium\ logo.png') no-repeat;
+  width: 150px;
+  height: 150px;
+  margin: 10px 15px 10px 0;
+}
+
+.navbar-brand {
+  padding-top: 25px;
+
+}
+
+.navbar-brand h1 { 
+
+  color: rgb(163, 3, 48);
+  font-size: 2em;
+  
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+
+#notif a{
+  padding-top: 35px;
+  color: rgb(163, 3, 48);
+  text-align: center;
+  font-size: 1.5em;
+
+}
+#nav-list a {
+  color: rgb(163, 3, 48);
+  text-align: center;
+  font-size: 1.5em;
+  background-image: linear-gradient(
+    to right,
+ 
+    #a34f86,
+    #4f94a3 50%,
+    rgb(163, 3, 48) 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+
+  position: relative;
+  -webkit-background-clip: text;
+  
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+#nav-list a:before {
+  content: '';
+  background: #a34f86;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+#nav-list a:hover {
+ background-position: 0;
+}
+
+#nav-list a:hover::before {
+  width:100%;
+}
+#notif a:hover {
+ background-position: 0;
+}
+
+#notif a:hover::before {
+  width:100%;
+}
+
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid rgb(163, 3, 48);
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+/* END HEADER */
+
+@media (min-width: 1200px) {
+
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Header */
+  #logo-img {
+    background: url('../images/small.png') no-repeat;
+    width: 100px;
+    height: 100px;
+    margin: 5px 5px 5px 0;
+  }
+
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 10px;
+    font-size: 5vw; /* 1vw = 1% of viewport width */
+  }
+  .navbar-brand p { /* Kosher cert */
+    font-size: .6em;
+    margin-top: 12px;
+  }
+  .navbar-brand p img { /* Star-K */
+    height: 20px;
+  }
+
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+  #collapsable-nav a span { /* Collapsed nav menu glyph */
+    font-size: 1em;
+    margin-right: 5px;
+  }
+
+  #call-btn > a {
+    font-size: 1.5em;
+    display: block;
+    margin: 0 20px;
+    padding: 10px;
+    border: 2px solid #fff;
+    background-color: #f6b319;
+    color: #ffffff;
+  }
+  #xs-deliver {
+    margin-top: 5px;
+    font-size: .7em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
+  /* End Header */
+
+}
+/*
+    DEMO STYLE
+*/
+
+
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: #999;
+}
+
+a,
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.navbar {
+    padding: 15px 10px;
+    background: #fff;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 40px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-btn {
+    box-shadow: none;
+    outline: none !important;
+    border: none;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #ddd;
+    margin: 40px 0;
+}
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+    /* position: fixed; */
+}
+
+#sidebar {
+    min-width: 25%;
+    max-width: 25%;
+    /* background: #7386D5; */
+    color: rgb(239, 91, 115);
+    transition: all 0.3s;
+    position: fixed;
+    height: 100%;
+    margin-top: 150px;
+    padding-left: 100px;
+    font-family: 'Michroma', sans-serif;
+    background: url('../images/team\ bg.png') no-repeat ;
+  
+
+}
+/* #sidebar.img{
+  height: 100%;
+  width: auto;
+} */
+#sidebar.active {
+    margin-left: -250px;
+}
+
+#sidebar .sidebar-header {
+    /* padding: 20px; */
+    /* background: #7386D5; */
+    font-weight: 400;
+    padding-top: 80px;
+    width: 6.25%;
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+    border-bottom: 1px solid #47748b;
+}
+
+#sidebar ul p {
+    color: #fff;
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    /* padding: 10px; */
+    width: auto;
+    font-size: 0.8em;
+    display: block;
+    font-family: 'Michroma', sans-serif;
+    /* padding-top: 0%; */
+}
+
+#sidebar ul li a:hover {
+    
+    /* background: #fff; */
+    color:rgb(239, 65, 94) ;
+     font-weight: bold;
+}
+
+#sidebar ul li.active>a,
+a[aria-expanded="true"] {
+    color: #fff;
+    background: #6d7fcc;
+}
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: #6d7fcc;
+}
+
+ul.CTAs {
+    padding: 20px;
+}
+
+ul.CTAs a {
+    text-align: center;
+    font-size: 0.9em !important;
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+
+#content {
+  font-family: 'Michroma', sans-serif;
+    width: 100%;
+    padding: 20px;
+    min-height: 100vh;
+    transition: all 0.3s;
+    margin-top: 150px;
+    margin-left: 25%;
+    background-color: rgb(255, 221, 227);
+    margin-top: 60px;
+    text-align: center;
+    padding-top: 10%;
+}
+
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+    #sidebarCollapse span {
+        display: none;
+    }
+}
+@import url('https://fonts.googleapis.com/css?family=Exo+2|Yatra+One');
+
+/* *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Exo 2', sans-serif;
+} */
+
+
+
+
+
+#content h1{
+
+  font-size: 48px;
+  color: rgb(137, 0, 39);
+  margin-bottom: 25px;
+}
+
+.our_team{
+  width: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.our_team .team_member{
+  width: 250px;
+  margin: 5px;
+ font-weight: bold;
+  /* background: rgb(0, 0, 0); */
+  padding: 20px 10px;
+
+  color: rgb(10, 15, 74);
+}
+
+.our_team .team_member .member_img{
+  /* background: rgb(0, 0, 0);   */
+  max-width: 190px;
+  width: 100%;
+  height: 190px;
+  margin: 0 auto;
+  border-radius: 50%;
+  padding: 5px;
+  /* position: relative; */
+  cursor: pointer;
+}
+
+.our_team .team_member .member_img img{
+  width: 100%;
+  height: 100%;
+}
+
+.our_team .team_member h3{
+  text-transform: uppercase;
+  font-size: 15px;
+  line-height: 15px;
+  letter-spacing: 2px;
+  margin: 15px 0 0px;
+  font-weight: bold;
+}
+
+.our_team .team_member span{
+  font-size: 10px;
+}
+
+.our_team .team_member p{
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+
+/* body {
+  background-color: #ddd;
+  padding: 100px 20px 20px 20px;
+} */
+
+.social-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: -10px;
+}
+.social-buttons__button {
+  margin: 10px 5px 0;
+}
+
+.social-button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  width: 35px;
+  height: 35px;
+  text-decoration: none;
+  border-radius: 100%;
+  background: rgb(255, 221, 227);
+  text-align: center;
+}
+.social-button::after {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: 50%;
+  display: block;
+  width: 0;
+  height: 0;
+  border-radius: 100%;
+  transition: 0.3s;
+}
+.social-button:focus, .social-button:hover {
+  color: #fff;
+}
+.social-button:focus::after, .social-button:hover::after {
+  width: calc(100% + 2px);
+  height: calc(100% + 2px);
+  margin-left: calc(-50% - 1px);
+}
+.social-button i,
+.social-button svg {
+  position: relative;
+  z-index: 1;
+  transition: 0.3s;
+}
+.social-button i {
+  font-size: 28px;
+}
+.social-button svg {
+  height: 40%;
+  width: 40%;
+}
+.social-button--mail {
+  color: #0072c6;
+}
+.social-button--mail::after {
+  background: #0072c6;
+}
+.social-button--facebook {
+  color: #3b5999;
+}
+.social-button--facebook::after {
+  background: #3b5999;
+}
+.social-button--linkedin {
+  color: #0077b5;
+}
+.social-button--linkedin::after {
+  background: #0077b5;
+}
+.social-button--github {
+  color: #171515;
+}
+.social-button--github::after {
+  background: #171515;
+}
+.social-button--codepen {
+  color: #212121;
+}
+.social-button--codepen::after {
+  background: #212121;
+}
+.social-button--steam {
+  color: #7da10e;
+}
+.social-button--steam::after {
+  background: #7da10e;
+}
+.social-button--snapchat {
+  color: #eec900;
+}
+.social-button--snapchat::after {
+  background: #eec900;
+}
+.social-button--twitter {
+  color: #55acee;
+}
+.social-button--twitter::after {
+  background: #55acee;
+}
+.social-button--instagram {
+  color: #e4405f;
+}
+.social-button--instagram::after {
+  background: #e4405f;
+}
+.social-button--npmjs {
+  color: #c12127;
+}
+.social-button--npmjs::after {
+  background: #c12127;
+}
+.panel-footer  {
+  background-color: rgba(163, 3, 48,0.2);
+  margin-bottom: 30px;
+  text-align: center;
+}
+.panel-footer section:nth-child(3) {
+  margin-bottom: 0; /* margin already exists on the whole row */
+}
+.panel-footer section hr {
+  width: 50%;
+}
